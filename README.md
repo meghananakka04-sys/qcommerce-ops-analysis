@@ -1,5 +1,5 @@
 # # Quick Commerce Operations Analysis: Blinkit vs Zepto vs Swiggy
-📋 **Notion Case Study:** [Read the full writeup here]([text](https://www.notion.so/Quick-Commerce-Ops-Intelligence-A-Comparative-Study-of-Blinkit-Zepto-and-Swiggy-36520d056b48804d8929e918801e7a21?source=copy_link))
+📋 **Notion Case Study:** [Read the full writeup here](https://www.notion.so/Quick-Commerce-Ops-Intelligence-A-Comparative-Study-of-Blinkit-Zepto-and-Swiggy-36520d056b48804d8929e918801e7a21?source=copy_link)
 
 ## Problem Statement
 Quick commerce platforms like Blinkit, Zepto, and Swiggy Instamart promise 10-minute delivery but consumer-reported failures are frequent and publicly visible. This project quantifies delivery ops performance across platforms using real user review data and Google search trends to identify where operations are failing and why.
