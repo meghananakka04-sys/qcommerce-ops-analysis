@@ -80,3 +80,28 @@ Score is a weighted composite of: avg rating (40%), positive sentiment % (30%), 
 - `chart2_sentiment.png` — Sentiment distribution
 - `chart3_complaints.png` — Complaint categories
 - `chart4_ops_score.png` — Ops health scorecard
+
+## Optimization — Complaint-Weighted Resource Allocation Model
+
+Beyond diagnosis, a weighted resource allocation model was built to recommend where each platform should direct ops improvement effort based on complaint frequency distribution.
+
+### Urgency Score (complaint mentions per 100 reviews)
+| Platform | Urgency Score |
+|----------|--------------|
+| Zepto    | 38.2         |
+| Swiggy   | 36.0         |
+| Blinkit  | 8.4          |
+
+Zepto and Swiggy require 4.5x more ops intervention per 100 users than Blinkit.
+
+### Recommended Resource Allocation %
+| Problem Area    | Blinkit | Swiggy | Zepto |
+|----------------|---------|--------|-------|
+| App issues      | 42.9%   | 36.1%  | 43.5% |
+| Late delivery   | 14.3%   | 20.0%  | 19.9% |
+| Refund issues   | 26.2%   | 16.7%  | 16.2% |
+| Order cancelled | 9.5%    | 18.3%  | 10.5% |
+| Wrong item      | 7.1%    | 8.9%   | 9.9%  |
+
+### Key Insight
+All three platforms should prioritize app stability as their #1 ops investment. Swiggy uniquely needs significant focus on order cancellation management (18.3%) — nearly double Blinkit's 9.5% — suggesting a dark store inventory or rider allocation problem.
